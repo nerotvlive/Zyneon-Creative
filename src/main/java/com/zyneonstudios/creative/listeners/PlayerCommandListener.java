@@ -24,6 +24,9 @@ public class PlayerCommandListener implements Listener {
             e.setCancelled(true);
             p.performCommand("neino");
         } else if(e.getMessage().contains("/pl")) {
+            if(e.getMessage().contains("/plot")||e.getMessage().contains("/play")) {
+                return;
+            }
             e.setCancelled(true);
             p.performCommand("neino");
         } else if(e.getMessage().contains("/ver")) {
