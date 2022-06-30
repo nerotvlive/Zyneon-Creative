@@ -27,3 +27,4 @@ commands:
   Tell:
     aliases: [whisper,w,msg]
   Thunder:
+  Spawn:

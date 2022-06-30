@@ -78,6 +78,7 @@ public class Main extends JavaPlugin {
         getCommand(new NightCommand(),"Night");
         getCommand(new PingCommand(),"Ping");
         getCommand(new RainCommand(),"Rain");
+        getCommand(new SpawnCommand(),"Spawn");
         getCommand(new SpeedCommand(),"Speed");
         getCommand(new StopCommand(),"SRL");
         getCommand(new SunCommand(),"Sun");
