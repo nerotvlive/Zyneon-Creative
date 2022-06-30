@@ -1,0 +1,29 @@
+name: Creative
+version: '${project.version}'
+main: com.zyneonstudios.creative.Main
+api-version: 1.19
+
+depend:
+  - ZyneonAPI
+  - PlotSquared
+
+commands:
+  Broadcast:
+    aliases: [bc]
+  Clearchat:
+    aliases: [cc]
+  Day:
+  GameMode:
+    aliases: [gm]
+  Night:
+  Ping:
+  Rain:
+  Speed:
+  SRL:
+    aliases: [stop,shutdown,end,close]
+  Sun:
+  Teleport:
+    aliases: [tp]
+  Tell:
+    aliases: [whisper,w,msg]
+  Thunder:
