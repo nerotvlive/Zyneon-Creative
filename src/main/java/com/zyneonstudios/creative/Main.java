@@ -41,14 +41,19 @@ public class Main extends JavaPlugin {
         initConfig();
         initCommands();
         initListeners();
-        Bukkit.getServer().getMessenger().unregisterIncomingPluginChannel(instance,"base:bungee",new Receiver());
-        Bukkit.getServer().getMessenger().unregisterOutgoingPluginChannel(instance, "BungeeCord");
+        Bukkit.getServer().getMessenger().registerIncomingPluginChannel(instance,"base:bungee",new Receiver());
+        Bukkit.getServer().getMessenger().registerOutgoingPluginChannel(instance,"base:spigot");
+        Bukkit.getServer().getMessenger().registerOutgoingPluginChannel(instance, "BungeeCord");
     }
 
     @Override
     public void onDisable() {
         Strings.setPrefixWord("Creative");
+        Bukkit.getServer().getMessenger().unregisterIncomingPluginChannel(instance,"base:bungee",new Receiver());
+        Bukkit.getServer().getMessenger().unregisterOutgoingPluginChannel(instance,"base:spigot");
+        Bukkit.getServer().getMessenger().unregisterOutgoingPluginChannel(instance, "BungeeCord");
         config = null;
+        PM = null;
         instance = null;
     }
 
