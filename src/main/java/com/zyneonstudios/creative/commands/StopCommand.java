@@ -1,6 +1,6 @@
 package com.zyneonstudios.creative.commands;
 
-import com.zyneonstudios.api.Zyneon;
+import com.zyneonstudios.api.paper.Zyneon;
 import com.zyneonstudios.api.utils.Strings;
 import com.zyneonstudios.creative.Main;
 import com.zyneonstudios.creative.utils.CreativeUser;

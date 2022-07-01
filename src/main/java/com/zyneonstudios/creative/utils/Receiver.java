@@ -2,6 +2,7 @@ package com.zyneonstudios.creative.utils;
 
 import com.google.common.io.ByteArrayDataInput;
 import com.google.common.io.ByteStreams;
+import com.zyneonstudios.api.paper.Zyneon;
 import org.bukkit.Bukkit;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
@@ -20,7 +21,7 @@ public class Receiver implements PluginMessageListener {
             String data1 = in.readUTF();
             int data2 = in.readInt();
         } else if (subChannel.contains("stopServer")) {
-            com.zyneonstudios.api.Zyneon.getZyneonServer().stopServer();
+            Zyneon.getZyneonServer().stopServer();
         } else if (subChannel.contains("playSound_")) {
             String data1 = in.readUTF();
             int data2 = in.readInt();

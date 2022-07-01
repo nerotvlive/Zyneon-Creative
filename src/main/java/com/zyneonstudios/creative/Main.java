@@ -1,7 +1,7 @@
 package com.zyneonstudios.creative;
 
-import com.zyneonstudios.api.Zyneon;
-import com.zyneonstudios.api.configuration.Config;
+import com.zyneonstudios.api.paper.Zyneon;
+import com.zyneonstudios.api.paper.configuration.Config;
 import com.zyneonstudios.api.utils.Strings;
 import com.zyneonstudios.creative.commands.*;
 import com.zyneonstudios.creative.listeners.PlayerChatListener;

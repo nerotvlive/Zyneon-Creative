@@ -1,11 +1,10 @@
 package com.zyneonstudios.creative.utils;
 
-import com.zyneonstudios.api.utils.user.User;
+import com.zyneonstudios.api.paper.utils.user.User;
 import com.zyneonstudios.creative.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
-
 import java.util.UUID;
 
 public class CreativeUser extends User {
