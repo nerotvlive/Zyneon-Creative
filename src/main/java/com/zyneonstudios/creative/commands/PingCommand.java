@@ -21,9 +21,9 @@ public class PingCommand implements CommandExecutor {
                     int Ping = getPing(p);
                     String ping;
                     if (Ping < 10) {
-                        ping = "§5" + Ping;
+                        ping = "§9" + Ping;
                     } else if (Ping < 20) {
-                        ping = "§d" + Ping;
+                        ping = "§9" + Ping;
                     } else if (Ping < 30) {
                         ping = "§e" + Ping;
                     } else if (Ping < 40) {

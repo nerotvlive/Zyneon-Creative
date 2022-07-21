@@ -13,13 +13,13 @@ public class PlayerChatListener implements Listener {
         Player p = e.getPlayer();
         String Name;
         if(p.hasPermission("zyneon.team")) {
-            Name = "§5Team §8● §f" + p.getName();
+            Name = "§9Team §8● §f" + p.getName();
         } else if(p.hasPermission("zyneon.creator")) {
-            Name = "§5Creator §8● §f" + p.getName();
+            Name = "§9Creator §8● §f" + p.getName();
         } else if(p.hasPermission("zyneon.premium")) {
-            Name = "§dPremium §8● §f"+p.getName();
+            Name = "§9Premium §8● §f"+p.getName();
         } else {
-            Name = "§dUser §8● §f"+p.getName();
+            Name = "§9User §8● §f"+p.getName();
         }
         String MSG;
         if(p.hasPermission("zyneon.team")) {

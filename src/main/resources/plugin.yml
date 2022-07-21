@@ -6,6 +6,8 @@ api-version: 1.19
 depend:
   - ZyneonAPI
   - PlotSquared
+  - FastAsyncWorldEdit
+  - WorldEdit
 
 commands:
   Broadcast:

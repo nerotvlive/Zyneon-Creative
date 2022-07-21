@@ -3,6 +3,7 @@ package com.zyneonstudios.creative;
 import com.zyneonstudios.api.paper.Zyneon;
 import com.zyneonstudios.api.paper.configuration.Config;
 import com.zyneonstudios.api.utils.Strings;
+import com.zyneonstudios.creative.api.API;
 import com.zyneonstudios.creative.commands.*;
 import com.zyneonstudios.creative.listeners.PlayerChatListener;
 import com.zyneonstudios.creative.listeners.PlayerCommandListener;
@@ -44,6 +45,7 @@ public class Main extends JavaPlugin {
         Bukkit.getServer().getMessenger().registerIncomingPluginChannel(instance,"base:bungee",new Receiver());
         Bukkit.getServer().getMessenger().registerOutgoingPluginChannel(instance,"base:spigot");
         Bukkit.getServer().getMessenger().registerOutgoingPluginChannel(instance, "BungeeCord");
+        API.initCommandList();
     }
 
     @Override
@@ -105,10 +107,10 @@ public class Main extends JavaPlugin {
             Scoreboard.registerNewTeam("01Creator");
             Scoreboard.registerNewTeam("02Premium");
             Scoreboard.registerNewTeam("03Spieler");
-            Scoreboard.getTeam("00000Team").setPrefix("§5Team §8● §f");
-            Scoreboard.getTeam("01Creator").setPrefix("§5Creator §8● §f");
-            Scoreboard.getTeam("02Premium").setPrefix("§dPremium §8● §f");
-            Scoreboard.getTeam("03Spieler").setPrefix("§dUser §8● §f");
+            Scoreboard.getTeam("00000Team").setPrefix("§9Team §8● §f");
+            Scoreboard.getTeam("01Creator").setPrefix("§9Creator §8● §f");
+            Scoreboard.getTeam("02Premium").setPrefix("§9Premium §8● §f");
+            Scoreboard.getTeam("03Spieler").setPrefix("§9User §8● §f");
             Scoreboard.getTeam("00000Team").setCanSeeFriendlyInvisibles(false);
             Scoreboard.getTeam("01Creator").setCanSeeFriendlyInvisibles(false);
             Scoreboard.getTeam("02Premium").setCanSeeFriendlyInvisibles(false);
