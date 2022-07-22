@@ -6,7 +6,7 @@
 
     <groupId>com.zyneonstudios</groupId>
     <artifactId>Creative</artifactId>
-    <version>1.2.0-1.19-SNAPSHOT</version>
+    <version>1.3.0-1.19-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Creative</name>

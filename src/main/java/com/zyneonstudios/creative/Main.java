@@ -5,7 +5,6 @@ import com.zyneonstudios.api.paper.configuration.Config;
 import com.zyneonstudios.api.utils.Strings;
 import com.zyneonstudios.creative.api.API;
 import com.zyneonstudios.creative.commands.*;
-import com.zyneonstudios.creative.listeners.PlayerChatListener;
 import com.zyneonstudios.creative.listeners.PlayerCommandListener;
 import com.zyneonstudios.creative.listeners.PlayerJoinListener;
 import com.zyneonstudios.creative.listeners.PlayerQuitListener;
@@ -71,7 +70,6 @@ public class Main extends JavaPlugin {
     }
 
     private static void initListeners()  {
-        Zyneon.getAPI().initListenerClass(PM,new PlayerChatListener(),instance);
         Zyneon.getAPI().initListenerClass(PM,new PlayerCommandListener(),instance);
         Zyneon.getAPI().initListenerClass(PM,new PlayerJoinListener(),instance);
         Zyneon.getAPI().initListenerClass(PM,new PlayerQuitListener(),instance);
@@ -107,10 +105,10 @@ public class Main extends JavaPlugin {
             Scoreboard.registerNewTeam("01Creator");
             Scoreboard.registerNewTeam("02Premium");
             Scoreboard.registerNewTeam("03Spieler");
-            Scoreboard.getTeam("00000Team").setPrefix("§9Team §8● §f");
-            Scoreboard.getTeam("01Creator").setPrefix("§9Creator §8● §f");
-            Scoreboard.getTeam("02Premium").setPrefix("§9Premium §8● §f");
-            Scoreboard.getTeam("03Spieler").setPrefix("§9User §8● §f");
+            Scoreboard.getTeam("00000Team").setPrefix("§cTeam §8● §f");
+            Scoreboard.getTeam("01Creator").setPrefix("§dCreator §8● §f");
+            Scoreboard.getTeam("02Premium").setPrefix("§6Premium §8● §f");
+            Scoreboard.getTeam("03Spieler").setPrefix("§7User §8● §f");
             Scoreboard.getTeam("00000Team").setCanSeeFriendlyInvisibles(false);
             Scoreboard.getTeam("01Creator").setCanSeeFriendlyInvisibles(false);
             Scoreboard.getTeam("02Premium").setCanSeeFriendlyInvisibles(false);
